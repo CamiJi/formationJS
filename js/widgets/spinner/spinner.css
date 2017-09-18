@@ -1,0 +1,29 @@
+.spinner {
+	height: 8em;
+	width: 15em;
+	background-color: white;
+	position: absolute;
+	z-index: 200;
+	opacity: 0.9;
+	border-radius: 0.5em;
+	padding: 1em;
+	border: 0.1em solid black;
+	animation: apparition 0.5s;
+}
+
+.spinner .image img {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.spinner .title {
+	text-align: center;
+	font-weight: bold;
+}
+
+@keyframes apparition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

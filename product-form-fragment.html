@@ -1,0 +1,24 @@
+<form name="f" id="f" novalidate="true" method="get" action="#" enctype="application/x-www-form-urlencoded">
+	<div class="label"><label for="id">ID :</label></div>
+	<div class="data"><input type="number" name="id" id="id" size="5" maxlength="5" required><span></span></div>
+	<div class="label"><label for="id_cat">ID_CAT :</label></div>
+	<div class="data"><input type="number" name="id_cat" id="id_cat" min="1" max="4" step="1" size="5" required><span></span></div>
+	<div class="label"><label for="quantite">quantite :</label></div>
+	<div class="data"><input type="number" name="quantite" id="quantite" size="5" maxlength="5" min="0" max="60" required><span></span></div>
+	<div class="label"><label for="prix">Prix :</label></div>
+	<div class="data"><input type="number" min="0" max="9999.99" step="0.01" name="prix" id="prix" required><span></span></div>
+	<div class="label"><label for="nom">Nom :</label></div>
+	<div class="data"><input type="text" name="nom" id="nom" placeholder="nom du produit" size="25" maxlength="50" required><span></span></div>
+	<div class="label"><label for="desc">Description :</label></div>
+	<div class="data"><input type="text" name="desc" id="desc" size="40" maxlength="50"><span></span></div>
+	<div class="label"><label for="image">Image :</label></div>
+	<div class="data"><input type="text" name="image" id="image" size="40" maxlength="127" required pattern="^[\w\/]*\.(jpg|jpeg)$"><span></span></div>
+	<div class="separate">&nbsp;</div>
+	<div class="buttons">
+		<input type="submit" name="modifier" id="enregistrer" value="Enregistrer">
+		<input type="reset" name="raz" id="raz" value="Réinitialiser">
+		<input type="button" name="ajouter" id="ajouter" value="Ajouter">
+		<input type="button" name="supprimer" id="supprimer" value="Supprimer">
+		<input type="button" name="annuler" id="annuler" value="Annuler">
+	</div>
+</form>

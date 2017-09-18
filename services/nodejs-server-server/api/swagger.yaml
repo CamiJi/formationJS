@@ -1,0 +1,133 @@
+---
+swagger: "2.0"
+info:
+  description: "gestion des produits de boutique.com"
+  version: "0.9.1"
+  title: "Online Products"
+host: "localhost:3000"
+tags:
+- name: "product"
+  description: "Tout sur les produits"
+schemes:
+- "http"
+paths:
+  /products:
+    get:
+      tags:
+      - "product"
+      summary: "lister les produits"
+      description: "lister les produits au format JSON"
+      operationId: "getProducts"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "Récupérer un tableau de un produit par son id"
+        required: false
+        type: "integer"
+      - name: "id_category"
+        in: "query"
+        description: "Récupérer un tableau de produits par leur id de catégorie"
+        required: false
+        type: "integer"
+      responses:
+        400:
+          description: "Mauvais ID"
+        404:
+          description: "Produit non trouvé"
+      x-swagger-router-controller: "Product"
+    post:
+      tags:
+      - "product"
+      summary: "Ajouter un nouveau produit à la liste des produits"
+      description: ""
+      operationId: "postProduct"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Le produit à rajouter dans la liste"
+        required: true
+        schema:
+          $ref: "#/definitions/Product"
+      responses:
+        405:
+          description: "Invalid input"
+      x-swagger-router-controller: "Product"
+  /products/{id}:
+    get:
+      tags:
+      - "product"
+      summary: "Trouver un produit par son ID"
+      description: "Renvoie un seul produit"
+      operationId: "getProduct"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID du produit"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Yes !"
+          schema:
+            $ref: "#/definitions/Product"
+        400:
+          description: "Mauvais ID"
+        404:
+          description: "Produit non trouvé"
+      x-swagger-router-controller: "Product"
+    delete:
+      tags:
+      - "product"
+      summary: "Supprime un produit"
+      description: ""
+      operationId: "deleteProduct"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "L'id du produit à supprimer !"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Mauvais ID"
+        404:
+          description: "Produit non trouvé"
+      x-swagger-router-controller: "Product"
+definitions:
+  Product:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      id_cat:
+        type: "integer"
+        format: "int64"
+      stock:
+        type: "integer"
+        format: "int64"
+      quantity:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+        example: "Pommes de Normandie"
+      desc:
+        type: "string"
+      image:
+        type: "string"
+      price:
+        type: "number"
+        format: "float"

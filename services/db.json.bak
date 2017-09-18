@@ -1,0 +1,179 @@
+{
+  "user": {
+    "login": "root",
+    "password": ""
+  },
+  "products": [
+    {
+      "id": 1,
+      "id_category": 1,
+      "name": "Pommes de Normandie 2",
+      "desc": "Les plus belles pommes... Juteuses et goûteuses !",
+      "price": 4.99,
+      "stock": 20,
+      "image": "images/produits/pommes.jpg"
+    },
+    {
+      "id": 2,
+      "id_category": 1,
+      "name": "Oranges de Tunisie",
+      "desc": "Mangez des oranges bien mûres et sucrées même en plein hivers !",
+      "price": 7.99,
+      "stock": 15,
+      "image": "images/produits/oranges.jpg"
+    },
+    {
+      "id": 4,
+      "id_category": 2,
+      "name": "Machine à laver Whirl...",
+      "desc": "Une des meilleures machines à laver du moment !",
+      "price": 1199.9,
+      "stock": 2,
+      "image": "images/produits/machinesalaver.jpg"
+    },
+    {
+      "id": 5,
+      "id_category": 3,
+      "name": "Fer à repasser Se...",
+      "desc": "Un très bon fer à repasser équipé de sa centrale vapeur...",
+      "price": 49.95,
+      "stock": 7,
+      "image": "images/produits/ferarepasser.jpg"
+    },
+    {
+      "id": 6,
+      "id_category": 4,
+      "name": "Rateau",
+      "desc": "Le rateau est indispensable pour tous les travaux de jardinage...",
+      "price": 15,
+      "stock": 3,
+      "image": "images/produits/rateau.jpg"
+    },
+    {
+      "id": 7,
+      "id_category": 1,
+      "name": "Entrecôte",
+      "desc": "De belles entrecôtes persillées et goûtues, issues de race à viande !",
+      "price": 19.95,
+      "stock": 5,
+      "image": "images/produits/viandes.jpg"
+    },
+    {
+      "id": 8,
+      "id_category": 1,
+      "name": "Framboises surgelées",
+      "desc": "Toutes fraiches cueillies, aussitôt congelées !",
+      "price": 45,
+      "stock": 100,
+      "image": "images/produits/surgeles.jpg"
+    },
+    {
+      "id": 9,
+      "id_category": 3,
+      "name": "Machine à expresso",
+      "desc": "Une superbe machine à expresso qui ravira vos papilles autant que vos yeux !",
+      "price": 79.9,
+      "stock": 4,
+      "image": "images/produits/expresso.jpg"
+    },
+    {
+      "id": 10,
+      "id_category": 3,
+      "name": "Machine à chocolat",
+      "desc": "Faites vous-même, à la maison un chocolat onctueux et savoureux comme au salon de thé !",
+      "price": 44.99,
+      "stock": 1,
+      "image": "images/produits/machinechoco.jpg"
+    },
+    {
+      "id": 11,
+      "id_category": 1,
+      "name": "Légumes frais",
+      "desc": "Recevez, chez vous, un panier de légumes de saison à quantité variable selon la production du producteur !",
+      "price": 9.99,
+      "stock": 37,
+      "image": "images/produits/legumes.jpg"
+    },
+    {
+      "id": 12,
+      "id_category": 1,
+      "name": "Yahourt maison",
+      "desc": "Goûtez nos délicieux yahourts maison !",
+      "price": 1.99,
+      "stock": 36,
+      "image": "images/produits/yahourts.jpg"
+    },
+    {
+      "id": 13,
+      "id_category": 2,
+      "name": "Réfrigérateur américain",
+      "desc": "Enfin un réfrigérateur américain qui ne vous laissera pas en panne de glaçons...",
+      "price": 2399.99,
+      "stock": 1,
+      "image": "images/produits/refrigerateur.jpg"
+    },
+    {
+      "id": 14,
+      "id_category": 3,
+      "name": "Sèche cheveux",
+      "desc": "Un superbe sèche cheveux pour femme au design envoûtant !",
+      "price": 25,
+      "stock": 6,
+      "image": "images/produits/sechecheveux.jpg"
+    },
+    {
+      "id": 15,
+      "id_category": 1,
+      "name": "Expresso italien",
+      "desc": "le meilleur expresso au monde !",
+      "price": 4.99,
+      "stock": 50,
+      "image": ""
+    },
+    {
+      "id": 16,
+      "id_category": 1,
+      "name": "12 pains au chocolat",
+      "desc": "Des pains au chocolat tout chauds, pour toute la famille, chaque matins !",
+      "price": 4.5,
+      "stock": 58,
+      "image": ""
+    },
+    {
+      "id": 17,
+      "id_category": 1,
+      "name": "Chocolat noir 72%",
+      "desc": "Un chocolat idéal pour le café.",
+      "price": 0.99,
+      "stock": 12,
+      "image": ""
+    },
+    {
+      "id_category": 4,
+      "name": "Pelles de Turquie",
+      "desc": "Les meilleures pelles du monde !",
+      "price": 149.99,
+      "stock": 2,
+      "image": "",
+      "id": 18
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Alimentation"
+    },
+    {
+      "id": 2,
+      "name": "Gros électro"
+    },
+    {
+      "id": 3,
+      "name": "Petit électro"
+    },
+    {
+      "id": 4,
+      "name": "Jardin"
+    }
+  ]
+}

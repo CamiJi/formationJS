@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+	<nb val="2" />
+	<product id="prod1">
+		<nom>Pommes</nom>
+		<prix>12,27 €</prix>
+		<id_cat>1</id_cat>
+	</product>
+		
+</products>

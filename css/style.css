@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 5em 0;
+}
+
+header {
+	border-bottom: 0.1em solid black;
+	top: 0;
+	box-shadow: 1em 1em 1em #808080;
+}
+
+footer {
+	border-top: 0.1em solid black;
+	bottom: 0;
+	box-shadow: 1em -1em 1em #808080;
+}
+
+section#main {
+	border: 0.08em dashed black;
+	margin: 1em;
+	padding: 1em;
+}
+
+.menu {
+	height: 5em;
+	background-color: CadetBlue;
+	position: fixed;
+	z-index: 128;
+	left:0;
+	right:0;
+	opacity: 0.9;
+}
+
+p::first-letter {
+	color: red;
+}
+
+header.menu ul.buttons li {
+	display: inline;
+	list-style-type: none;
+}
+
+header.menu ul.buttons li a {
+	float: left;
+	display: block;
+	min-width: 5em;
+	padding: 0.5em;
+	margin: 0 0.5em;
+	border: 0.1em solid black;
+	border-radius: 0.5em;
+	background-color: #ffffaa;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps;
+	color: black;
+}
+
+header.menu ul.buttons li a.active, header.menu ul.buttons li a:hover {
+	background-color: red;
+	color: white;
+}
+
+
+
+
+
+
+
